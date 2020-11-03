@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">PostAd</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+
+
+    <!-- Types of food I could think of in 5 minutes -->
+    <string-array name="categories">
+
+        <item>Categories</item>
+
+        <item>Real state</item>
+        <item>Motor</item>
+        <item>Books</item>
+        <item>Computers</item>
+        <item>Phones</item>
+        <item>Home/Garden</item>
+        <item>Boats</item>
+
+
+    </string-array>
+</resources>

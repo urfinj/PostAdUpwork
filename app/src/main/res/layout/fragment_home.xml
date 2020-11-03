@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/White">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/relLayout1"
+                android:background="@color/lightGrey">
+
+                <LinearLayout
+                    android:id="@+id/post_image_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="20dp">
+
+                    <HorizontalScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp">
+
+
+
+                            <ImageButton
+                                android:id="@+id/add_offer_picture1"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_margin="5dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="20dp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/camera_logo"
+                                android:backgroundTint="@color/blue2"/>
+
+                            <ImageButton
+                                android:id="@+id/add_offer_picture2"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_margin="5dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="20dp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/camera_logo"
+                                android:backgroundTint="@color/blue2"/>
+
+                            <ImageButton
+                                android:id="@+id/add_offer_picture3"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_margin="5dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="20dp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/camera_logo"
+                                android:backgroundTint="@color/blue2"/>
+
+                            <ImageButton
+                                android:id="@+id/add_offer_picture4"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_margin="5dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="20dp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/camera_logo"
+                                android:backgroundTint="@color/blue2"/>
+
+
+
+
+                        </LinearLayout>
+
+
+                    </HorizontalScrollView>
+
+
+                </LinearLayout>
+
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_below="@+id/post_image_layout"
+                    android:id="@+id/relative_category"
+                    android:layout_marginTop="30dp"
+                    android:background="@color/White">
+
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/fragment_spinner_category_post"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:background="@null"
+                        android:maxLines="2"
+                        android:hint="Categories"
+                        android:textColor="@color/Black"
+                        android:padding="10dp" />
+
+                </RelativeLayout>
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_below="@+id/relative_category"
+                    android:id="@+id/relLayout2"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/White">
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/input_title"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:background="@null"
+                        android:maxLines="2"
+                        android:hint="Title"
+                        android:textColorHint="@color/Black"
+                        android:textColor="@color/Black"
+                        android:padding="10dp"
+                        android:inputType="text" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relLayout2"
+                    android:id="@+id/relLayout9">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@color/White"
+                        android:id="@+id/relLayout3"
+                        android:layout_marginTop="10dp"
+                        android:padding="10dp">
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:id="@+id/input_description"
+                            android:layout_centerVertical="true"
+                            android:maxLines="20"
+                            android:background="@null"
+                            android:hint="Description"
+                            android:textColorHint="@color/Black"
+                            android:textColor="@color/Black"
+                            android:gravity="start"
+                            android:inputType="textMultiLine"/>
+
+
+                    </RelativeLayout>
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/White"
+                        android:id="@+id/relLayout33"
+                        android:layout_below="@id/relLayout3"
+                        android:layout_marginTop="10dp"
+                        android:padding="10dp">
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:id="@+id/input_price"
+                            android:layout_centerVertical="true"
+                            android:maxLines="1"
+                            android:background="@null"
+                            android:hint="Price(€)"
+                            android:textColorHint="@color/Black"
+                            android:textColor="@color/Black"
+                            android:gravity="start"
+                            android:inputType="number"/>
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_below="@id/relLayout33">
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <Button
+        android:id="@+id/btnAddPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/green2"
+        android:text="Publish ads"
+        android:textAlignment="center"
+        android:textAllCaps="false" />
+
+
+    <ProgressBar
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/progressBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:visibility="invisible"/>
+
+
+
+</RelativeLayout>
